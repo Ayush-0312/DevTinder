@@ -1,0 +1,23 @@
+devTinder - Tinder for developers
+
+# Day 1
+
+- created a repository
+- created a server using express
+- listen to port7777
+- install nodemon and updated scripts inside package.json
+- initialize git
+- .gitignore
+- install Postman app for testing API, create a workspace/collection
+- test dummy GET, POST, PATCH, DELETE API Calls
+
+# Day 2
+
+- install mongoose library
+- connect to Database "Connection-url"/devTinder
+- Call the connectDB function and connect to database before starting application on 7777
+- create a userSchema & User Model
+- create /signup API to add data to database
+- post some dummy data using API calls from postman
+- error handling using try, catch
+- .env to protect secret keys
