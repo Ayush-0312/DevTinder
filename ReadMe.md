@@ -21,3 +21,7 @@ devTinder - Tinder for developers
 - post some dummy data using API calls from postman
 - error handling using try, catch
 - .env to protect secret keys
+
+# Day 3
+- added express.json middleware to the app to read req.body
+- made signup API dynamic to receive data from end user
