@@ -28,3 +28,4 @@ devTinder - Tinder for developers
 - used Model.find to get data from the database
 - GET /user API, GET /feed API
 - create delete /user API
+- patch /user API to update data
