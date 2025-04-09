@@ -25,3 +25,6 @@ devTinder - Tinder for developers
 # Day 3
 - added express.json middleware to the app to read req.body
 - made signup API dynamic to receive data from end user
+- used Model.find to get data from the database
+- GET /user API, GET /feed API
+- create delete /user API
