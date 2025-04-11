@@ -38,3 +38,5 @@ devTinder - Tinder for developers
 - create custom validate function
 - improve DB Schema
 - add timestamps to the userSchema
+- add API level validations on patch request & signup post API
+- data sanitization - add API validations for each fields
