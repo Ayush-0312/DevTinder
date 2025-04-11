@@ -23,9 +23,18 @@ devTinder - Tinder for developers
 - .env to protect secret keys
 
 # Day 3
+
 - added express.json middleware to the app to read req.body
 - made signup API dynamic to receive data from end user
 - used Model.find to get data from the database
 - GET /user API, GET /feed API
 - create delete /user API
 - patch /user API to update data
+
+# Day 4
+
+- added required, unique, minLength, maxLength, lowercase, trim etc in Schema
+- added default value
+- create custom validate function
+- improve DB Schema
+- add timestamps to the userSchema
