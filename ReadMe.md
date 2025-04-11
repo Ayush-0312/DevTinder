@@ -40,3 +40,5 @@ devTinder - Tinder for developers
 - add timestamps to the userSchema
 - add API level validations on patch request & signup post API
 - data sanitization - add API validations for each fields
+- npm validator
+- used validator functions for different fields like email, photoUrl
