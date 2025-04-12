@@ -42,3 +42,10 @@ devTinder - Tinder for developers
 - data sanitization - add API validations for each fields
 - npm validator
 - used validator functions for different fields like email, photoUrl
+- NEVER TRUST req.body - user can send any malicious data always validate first
+
+# Day 5
+
+- validate data in signup API
+- install bcrypt package for encryption
+- create passwordHash using bcrypt.hash & save the user with encrypted password
