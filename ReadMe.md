@@ -51,3 +51,12 @@ devTinder - Tinder for developers
 - create passwordHash using bcrypt.hash & save the user with encrypted password
 - post /login API
 - compare password for authentication and throw error invalid credentials incase of wrong input
+
+# Day 6
+
+- install cookie-parse
+- send dummy cookie to user
+- GET /profile API and check if you get cookie back
+- install jsonwebtoken
+- in /login API, after email & password validation, create a JWT token and send it to user in cookies
+- read the cookie in /profile API and find the logged in user
