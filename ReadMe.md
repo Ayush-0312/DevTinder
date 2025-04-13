@@ -49,3 +49,5 @@ devTinder - Tinder for developers
 - validate data in signup API
 - install bcrypt package for encryption
 - create passwordHash using bcrypt.hash & save the user with encrypted password
+- post /login API
+- compare password for authentication and throw error invalid credentials incase of wrong input
