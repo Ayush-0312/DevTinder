@@ -64,3 +64,6 @@ devTinder - Tinder for developers
 # Day 7
 
 - create userAuth middleware
+- add userAuth in /profile and cleanup code
+- post /sendConnectionRequest API
+- set expiry for JWT token and cookies
