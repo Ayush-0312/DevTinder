@@ -60,3 +60,7 @@ devTinder - Tinder for developers
 - install jsonwebtoken
 - in /login API, after email & password validation, create a JWT token and send it to user in cookies
 - read the cookie in /profile API and find the logged in user
+
+# Day 7
+
+- create userAuth middleware
