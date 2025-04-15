@@ -67,3 +67,5 @@ devTinder - Tinder for developers
 - add userAuth in /profile and cleanup code
 - post /sendConnectionRequest API
 - set expiry for JWT token and cookies
+- create userSchema method to getJWT()
+- create userSchema method to compare password(passwordInputByUser)
