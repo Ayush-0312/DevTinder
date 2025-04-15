@@ -69,3 +69,12 @@ devTinder - Tinder for developers
 - set expiry for JWT token and cookies
 - create userSchema method to getJWT()
 - create userSchema method to compare password(passwordInputByUser)
+
+# Day 8
+
+- create apiList
+- group multiple routes under respective router
+- create routes folder for managing auth, profile, request routers
+- create authRouter, profileRouter, requestRouter
+- import these router in app.js
+- clean up code
