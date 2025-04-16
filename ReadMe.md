@@ -78,3 +78,4 @@ devTinder - Tinder for developers
 - create authRouter, profileRouter, requestRouter
 - import these router in app.js
 - clean up code
+- post /logout API 
