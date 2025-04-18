@@ -85,3 +85,5 @@ devTinder - Tinder for developers
 - patch /profile/edit
 - validateProfileEditData
 - update the edits
+- create connectionRequest Schema and connectionRequestModel
+- post /request/send/:status/:toUserId API
