@@ -87,3 +87,7 @@ devTinder - Tinder for developers
 - update the edits
 - create connectionRequest Schema and connectionRequestModel
 - post /request/send/:status/:toUserId API
+- proper validation of data
+- think about all corner cases
+- $or query $and query in mongoose
+- Schema.pre("save", function())
