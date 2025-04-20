@@ -91,3 +91,5 @@ devTinder - Tinder for developers
 - think about all corner cases
 - $or query $and query in mongoose
 - Schema.pre("save", function())
+- indexes in MongoDB optimises the search
+- compound index

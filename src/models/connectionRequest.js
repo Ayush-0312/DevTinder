@@ -22,6 +22,9 @@ const connectionRequestSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+//compound index
+connectionRequestSchema.index({ fromUserId: 1, toUserId: 1 }); //stores the data in ascending order
+
 connectionRequestSchema.pre("save", function (next) {
   const connectionRequest = this;
 
