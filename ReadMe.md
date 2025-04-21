@@ -98,3 +98,7 @@ devTinder - Tinder for developers
 
 - post /request/review/:status/:requestId
 - write proper validations and check corner cases
+- create user route and add it to app.js
+- get /user/requests/received API with all the checks
+- don't overshare
+- ref and populate - make connection b/w collections
