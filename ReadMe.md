@@ -93,3 +93,8 @@ devTinder - Tinder for developers
 - Schema.pre("save", function())
 - indexes in MongoDB optimises the search
 - compound index
+
+# Day 10
+
+- post /request/review/:status/:requestId
+- write proper validations and check corner cases
