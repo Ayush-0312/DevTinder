@@ -102,3 +102,8 @@ devTinder - Tinder for developers
 - get /user/requests/received API with all the checks
 - don't overshare
 - ref and populate - make connection b/w collections
+
+# Day 11
+
+- get /user/connections API
+- check corner cases
