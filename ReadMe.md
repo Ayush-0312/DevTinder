@@ -107,3 +107,6 @@ devTinder - Tinder for developers
 
 - get /user/connections API
 - check corner cases
+- get /feed API
+- check all corner cases
+- $or, $and, $nin, $ne and other query operators in mongoDB
