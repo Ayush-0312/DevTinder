@@ -10,7 +10,10 @@ profileRouter.get("/profile/view", userAuth, async (req, res) => {
   try {
     const user = req.user;
 
-    res.send(user);
+    const safeUser = user.toObject();
+    delete safeUser.password;
+
+    res.send(safeUser);
   } catch (err) {
     res.status(400).send("Error : " + err.message);
   }
@@ -24,7 +27,9 @@ profileRouter.patch("/profile/edit", userAuth, async (req, res) => {
 
     const loggedInUser = req.user;
 
-    Object.keys(req.body).forEach((key) => (loggedInUser[key] = req.body[key]));
+    for (const key in req.body) {
+      loggedInUser[key] = req.body[key];
+    }
 
     await loggedInUser.save();
 
