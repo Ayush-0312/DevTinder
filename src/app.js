@@ -24,7 +24,6 @@ app.use("/", userRouter);
 app.use("/", chatRouter);
 
 const server = http.createServer(app);
-initializeSocket(server);
 
 connectDB()
   .then(() => {
@@ -32,6 +31,8 @@ connectDB()
     server.listen(process.env.PORT, () => {
       console.log("Successfully listening...");
     });
+
+    initializeSocket(server);
   })
   .catch((err) => {
     console.error("Database not connected" + err.message);
