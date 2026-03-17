@@ -31,6 +31,14 @@ const initializeSocket = (server) => {
         console.log(err);
       }
     });
+
+    socket.on("typing", ({ chatId, userId }) => {
+      socket.to(chatId).emit("userTyping", { userId });
+    });
+
+    socket.on("stopTyping", ({ chatId, userId }) => {
+      socket.to(chatId).emit("userStoppedTyping", { userId });
+    });
   });
 };
 

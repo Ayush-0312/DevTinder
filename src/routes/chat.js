@@ -25,14 +25,24 @@ chatRouter.get("/chat/:targetUserId", userAuth, async (req, res) => {
       );
     }
 
-    const messages = await Message.find({ chatId: chat._id })
-      .sort({ createdAt: 1 })
+    const limit = parseInt(req.query.limit) || 20;
+    const cursor = req.query.cursor;
+
+    let query = { chatId: chat._id };
+
+    if (cursor) {
+      query.createdAt = { $lt: new Date(cursor) };
+    }
+
+    const messages = await Message.find(query)
+      .sort({ createdAt: -1 })
+      .limit(limit)
       .populate("senderId", "firstName lastName");
 
     res.json({
       chatId: chat._id,
       participants: chat.participants,
-      messages,
+      messages: messages.reverse(),
     });
   } catch (err) {
     console.error(err);
