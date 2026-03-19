@@ -22,6 +22,7 @@ const validateProfileEditData = (req) => {
     "skills",
     "photos",
     "github",
+    "linkedIn",
     "portfolio",
   ];
 

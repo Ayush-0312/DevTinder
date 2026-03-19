@@ -104,6 +104,16 @@ const userSchema = new mongoose.Schema(
       },
     },
 
+    linkedIn: {
+      type: String,
+      trim: true,
+      validate(value) {
+        if (value && !validator.isURL(value)) {
+          throw new Error("Invalid LinkedIn URL");
+        }
+      },
+    },
+
     portfolio: {
       type: String,
       trim: true,
