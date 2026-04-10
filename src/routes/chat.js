@@ -30,7 +30,7 @@ chatRouter.get("/chat/:targetUserId", userAuth, async (req, res) => {
 
     let query = { chatId: chat._id };
 
-    if (cursor) {
+    if (cursor && !isNaN(new Date(cursor))) {
       query.createdAt = { $lt: new Date(cursor) };
     }
 
