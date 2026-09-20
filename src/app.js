@@ -6,7 +6,9 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const http = require("http");
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({ origin: "https://devtinder.theayushgupta.in", credentials: true }),
+);
 app.use(express.json());
 app.use(cookieParser());
 
